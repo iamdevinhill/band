@@ -13,6 +13,13 @@
             background-color: #F5F5DC;
             color: #4A4238;
         }
+
+        .header-background {
+            background-color: rgba(72, 88, 65, 1); /* Background color for the header */
+            padding: 2rem;
+            border-radius: 0.5rem;
+            color: #F5F5DC;
+        }
         
         .mid-century-overlay {
             background: linear-gradient(135deg, rgba(210, 180, 140, 0.1), rgba(139, 69, 19, 0.1));
@@ -42,53 +49,53 @@
         }
 
         .submit-btn {
-        background-color: #7B5D33; /* A rich, warm brown */
-        color: #F5F5DC; /* Beige background color from the body */
-        border: 2px solid #4A4238; /* Dark brown border */
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-    }
+            background-color: #7B5D33; /* A rich, warm brown */
+            color: #F5F5DC; /* Beige background color from the body */
+            border: 2px solid #4A4238; /* Dark brown border */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-    .submit-btn:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #4A4238; /* Darker brown for hover effect */
-        transition: all 0.3s ease;
-        z-index: -1;
-    }
+        .submit-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #4A4238; /* Darker brown for hover effect */
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
 
-    .submit-btn:hover {
-        color: #F5F5DC;
-        border-color: #7B5D33;
-    }
+        .submit-btn:hover {
+            color: #F5F5DC;
+            border-color: #7B5D33;
+        }
 
-    .submit-btn:hover:before {
-        left: 0;
-    }
+        .submit-btn:hover:before {
+            left: 0;
+        }
 
-    .submit-btn:active {
-        transform: scale(0.95);
-    }
+        .submit-btn:active {
+            transform: scale(0.95);
+        }
 
-    .submit-btn:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(74, 66, 56, 0.3);
-    }
+        .submit-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 66, 56, 0.3);
+        }
     </style>
 </head>
 <body class="bg-beige-100 mid-century-overlay">
     <div class="container mx-auto px-4 py-8">
-        <header class="text-center mb-12">
+        <header class="text-center mb-12 header-background">
             <h1 class="text-5xl band-heading font-bold text-brown-800 mb-4">Timber & Strings</h1>
             <p class="text-xl text-brown-600 italic">Weaving stories through acoustic landscapes</p>
         </header>
@@ -209,11 +216,11 @@
                                 class="w-full p-3 border border-brown-300 rounded focus:outline-none focus:ring-2 focus:ring-brown-500"
                             >
                             <button 
-                            type="submit" 
-                            class="w-full submit-btn p-3 rounded"
-                        >
-                            Subscribe
-                        </button>
+                                type="submit" 
+                                class="w-full submit-btn p-3 rounded"
+                            >
+                                Subscribe
+                            </button>
                         </form>
                     </div>
                     <div class="flex justify-center space-x-6 items-center">
